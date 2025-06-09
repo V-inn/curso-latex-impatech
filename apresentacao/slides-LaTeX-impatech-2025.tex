@@ -1,0 +1,111 @@
+%
+% slides-LaTeX-impatech-2025.tex
+%
+% Introdução ao LaTeX no IMPA Tech
+%
+% 2025 Rafael Luis Beraldo
+% <rafael.beraldo@impatech.org.br>
+%
+%
+
+\documentclass[numbering=fraction,aspectratio=169]{beamer}
+
+
+% -------------------------------
+% Pacotes
+% -------------------------------
+\usepackage{fontspec}
+  \setmainfont{Latin Modern Roman}
+  \newfontfamily\emoji{NotoColorEmoji}[Renderer=HarfBuzz]
+\usepackage{polyglossia}
+\usepackage{hyperref}
+\usepackage{xspace}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+% -------------------------------
+% Tema e estilo
+% -------------------------------
+\usetheme[progressbar=frametitle]{metropolis}
+
+% Cores
+\definecolor{impatechpink}{RGB}{254,137,239}
+\definecolor{impatechorange}{RGB}{254,196,84}
+\definecolor{impatechgreen}{RGB}{189,255,139}
+
+% Logo na caa
+\titlegraphic{\includegraphics[width=3cm]{img/impatech-logo}}
+
+% Tema de cores e ajustes de fonte
+\setbeamercolor{frametitle}{fg=black, bg=impatechorange}
+\setbeamercolor{title separator}{fg=impatechorange}
+
+\setbeamercolor{block title alerted}{fg=black, bg=impatechpink}
+\setbeamercolor{block body alerted}{fg=black, bg=impatechpink!30}
+\setbeamercolor{alerted text}{fg=impatechpink}
+\setbeamerfont{alerted text}{series=\bfseries}
+
+\setbeamercolor{block title example}{fg=black, bg=impatechgreen}
+\setbeamercolor{block body example}{fg=black, bg=impatechgreen!30}
+\setbeamercolor{footline}{fg=gray}
+\setbeamercolor{progress bar}{fg=black}
+
+% Rodapé
+\setbeamertemplate{frame footer}{\insertshortauthor~(\insertshortinstitute)}
+
+
+% -------------------------------
+% Meus comandos
+% -------------------------------
+\newcommand\IMPATech{\textsc{impa}\,Tech\xspace}
+\newcommand\ThumbsUp{{\emoji 👍}\ }
+\newcommand\ThumbsDown{{\emoji 👎}\ }
+\newcommand\WarningEmoji{{\emoji ⚠️}\ }
+
+% -------------------------------
+% URLs
+% -------------------------------
+% \def
+
+
+% -------------------------------
+% Metadados do título
+% -------------------------------
+\title{Introdução ao \LaTeX: dia um}
+\author[Rafael Beraldo]{Rafael Luis Beraldo\\
+  \texttt{<\href{mailto:rafael.beraldo@impatech.org.br}{rafael.beraldo@impatech.org.br}>}\\
+  \textbf{Introdução ao \LaTeX}}
+\institute{\IMPATech}
+\date{June 10, 2025}
+
+
+% -------------------------------
+% Documento
+% -------------------------------
+\begin{document}
+\frenchspacing
+
+\begin{frame}[plain]{}
+  \maketitle
+\end{frame}
+
+\begin{frame}{Test}
+
+\end{frame}
+
+
+\section{Present Perfect: Meaning and structure}
+
+
+% \section{References}
+
+% \begin{frame}{References}
+%   \begin{thebibliography}{9}
+%   \end{thebibliography}
+% \end{frame}
+
+\end{document}
+
+% Local Variables:
+% jinx-languages: "pt_BR"
+% End:
