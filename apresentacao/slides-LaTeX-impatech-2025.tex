@@ -18,15 +18,21 @@
   \setmainfont{Latin Modern Roman}
   \newfontfamily\emoji{NotoColorEmoji}[Renderer=HarfBuzz]
 \usepackage{polyglossia}
+  \setdefaultlanguage[variant=brazilian]{portuguese}
 \usepackage{hyperref}
 \usepackage{xspace}
 \usepackage{graphicx}
 \usepackage{multicol}
+\usepackage{microtype}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{enumerate}
 
 % -------------------------------
 % Tema e estilo
 % -------------------------------
 \usetheme[progressbar=frametitle]{metropolis}
+\beamertemplatenavigationsymbolsempty
 
 % Cores
 \definecolor{impatechpink}{RGB}{254,137,239}
@@ -57,10 +63,20 @@
 % -------------------------------
 % Meus comandos
 % -------------------------------
+% IMPA Tech logo com pequeno espaçamento
 \newcommand\IMPATech{\textsc{impa}\,Tech\xspace}
+% Emoji
 \newcommand\ThumbsUp{{\emoji 👍}\ }
 \newcommand\ThumbsDown{{\emoji 👎}\ }
 \newcommand\WarningEmoji{{\emoji ⚠️}\ }
+% Itens semânticos
+\newcommand{\filename}[1]{\texttt{#1}}
+\newcommand{\email}[1]{\href{mailto:#1} {\texttt{\textless#1\textgreater}}}
+% TODO
+\newcommand{\todo}[1]{\colorbox{yellow}{#1}}
+% Código
+\newcommand{\code}[1]{\texttt{#1}}
+\newmintinline[latexcode]{latex}{}
 
 % -------------------------------
 % URLs
@@ -85,24 +101,28 @@
 \begin{document}
 \frenchspacing
 
+% Título
 \begin{frame}[plain]{}
   \maketitle
 \end{frame}
 
-\begin{frame}{Test}
-
+% Conteúdo
+\begin{frame}
+  \frametitle{Conteúdo}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \begin{multicols}{2}
+    \tableofcontents
+  \end{multicols}
 \end{frame}
 
-
-\section{Present Perfect: Meaning and structure}
-
-
-% \section{References}
-
-% \begin{frame}{References}
-%   \begin{thebibliography}{9}
-%   \end{thebibliography}
-% \end{frame}
+\input{sections/historia}
+\input{sections/linguagem-marcacao}
+\input{sections/exemplo-artigo}
+\input{sections/comandos}
+\input{sections/espaco-branco}
+\input{sections/simbolos-especiais}
+\input{sections/preambulo-documento}
+\input{sections/corpo-documento}
 
 \end{document}
 
