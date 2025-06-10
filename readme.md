@@ -1,12 +1,16 @@
 # Introdução ao LaTeX no IMPA Tech
 
-O LaTeX (/ˈlɑːtɛks/ ou /ˈlɑːtɛk/) é um processador de textos. Diferentemente do Word ou LibreOffice Write, no entanto, o usuário não edita o texto visualmente, mas indica por meio de comandos como o texto deve ser formatado. Dessa maneira, o LaTeX é uma linguagem de marcação de texto, como o HTML ou Markdown. Ele é usado em muitas áreas acadêmicas, especialmente na publicação de teses e artigos. Muitas editoras também usam esse programa para formatar seus livros.
+O LaTeX (/ˈlɑːtɛks/ ou /ˈlɑːtɛk/) é um processador de textos amplamente usado no meio acadêmico para escrever artigos, dissertações e teses. Diferentemente de editores como o Word, ele é uma linguagem de marcação – semelhante ao HTML ou Markdown.
 
-O software traz muitas vantagens em relação à editores visuais. Por exemplo, o escritor pode focar no texto que escreve, ao invés do tamanho das fontes; os arquivos `.tex` são simplesmente arquivos de texto, que não exigem um editor específico; por serem arquivos de texto, são extremamente leves e podem ser colocados num sistema de versões, como o Git; o resultado final é profissional, além de existirem pacotes que automaticamente formatam o texto de acordo com a ABNT, por exemplo.
+Entre as vantagens do LaTeX, estão a qualidade tipográfica profissional, o uso de arquivos em texto plano, a compatibilidade com controle de versões (como o Git), além de sua vocação para a notação matemática.
 
-Neste workshop, partiremos do básico do LaTeX, como por exemplo o que são comandos e como um arquivo é estruturado; passaremos por tópicos como listas, tipografia, tabelas, entre outros; e finalmente veremos como utilizar pacotes específicos para escrever artigos científicos, em especial pacotes que são úteis para linguistas.
+Neste curso, você aprenderá desde o básico do LaTeX – a estrutura de um documento e o controle do layout das páginas – até tópicos intermediários, tais como a inserção de tabelas, imagens, referências bibliográficas automáticas, suporte a diferentes línguas e o uso dos principais pacotes e classes criados pela comunidade.
 
-## Apresentações
+- Datas: 10, 17 e 24 de junho de 2025
+- Horário: das 17h30 às 19h00
+- Sala: Laboratório C3 @ IMPA Tech
+
+## Histórico deste curso
 
 Este curso nasceu como uma evolução e expansão do [Workshop de LaTeX para o
 OpenSanca](https://github.com/opensanca/workshop-latex). Abaixo, está o
@@ -19,7 +23,7 @@ histórico das apresentações até hoje:
 - [28 de maio de 2016](https://www.meetup.com/pt-BR/opensanca/events/230102377/), no opensanca
 - [25 de junho de 2016](https://www.meetup.com/pt-BR/opensanca/events/231664154/), no opensanca
 
-## Recursos
+## Recursos úteis
 
 - [A beginner's guide to
   LaTeX](http://mirrors.ctan.org/info/beginlatex/beginlatex-3.6.pdf)
