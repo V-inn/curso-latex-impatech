@@ -1,4 +1,4 @@
-%
+
 % certificado.tex
 %
 % Introdução ao LaTeX no IMPA Tech
@@ -9,3 +9,43 @@
 % Problema: quando você terminar este curso, como vai comprovar que o
 % concluiu? Vamos começar um certificado para imprimir depois. Você
 % está livre para implementar o certificado como quiser.
+
+\documentclass[12pt, a4paper, pagestyle]{article}
+\usepackage[landscape, margin=2cm]{geometry}
+\usepackage{fontspec}
+    \setmainfont{Linux Biolinum O}
+\usepackage{calc}
+
+\usepackage{graphicx}
+\usepackage{draftwatermark}
+\SetWatermarkText{REAL!}
+\SetWatermarkScale{0.15}
+\SetWatermarkLightness{0.5}
+\pagestyle{empty}
+
+\newcommand{\impatech}{\textsc{impa}\,Tech}
+
+\begin{document}
+\LARGE
+
+\begin{center}
+\noindent \textbf{\Huge Introdução ao \LaTeX\ no \impatech}
+
+\vspace{0.5cm}
+\noindent \textsc{\Huge Certificado}
+\end{center}
+\vspace{1cm}
+
+\noindent {Certificamos que \textsc{Vinícius Flesch Kern} participou
+de um curso em nosso grupo no dia 24 de junho de 2025 e está
+qualificado para editar textos em \LaTeX.}
+
+\vfill
+
+\begin{flushright}
+\noindent\rule{\widthof{Os organizadores}}{0.03cm}\\
+\noindent Os organizadores\\
+\impatech
+\end{flushright}
+
+\end{document}
